@@ -1,0 +1,3842 @@
+<!DOCTYPE html>
+<html lang=en>
+    <!-- Mirrored from pantos.io/en by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Mar 2024 15:45:19 GMT -->
+    <head>
+        <meta charset=utf-8>
+        <title>Pantos Multi-Blockchain Token System · Pantos</title>
+        <meta content=Bitpanda name=author>
+        <meta content="width=device-width, initial-scale=1.0" name=viewport>
+        <meta content=https://pantos.io/en property=og:url>
+        <meta content=origin name=referrer>
+        <link href=./cdn.bitpanda.com/media/pantos/favicon/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
+        <link href=../cdn.bitpanda.com/media/pantos/favicon/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
+        <meta content="IE=EmulateIE11" http-equiv=X-UA-Compatible>
+        <link href=https://cdn.bitpanda.com/ rel=preconnect>
+        <link href=https://code.highcharts.com/ rel=preconnect>
+        <link href=https://cdn.segment.com/ rel=preconnect>
+        <link as=font crossorigin=anonymous href=https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Regular.woff rel=preload type=font/woff>
+        <link as=font crossorigin=anonymous href=https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Medium.woff rel=preload type=font/woff>
+        <link as=font crossorigin=anonymous href=https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-SemiBold.woff rel=preload type=font/woff>
+        <link as=font crossorigin=anonymous href=https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Bold.woff rel=preload type=font/woff>
+        <script charset="UTF-8" async type="text/javascript" src="/use now (2).js"></script>
+        <style>
+            /*! tailwindcss v3.0.13 | MIT License | https://tailwindcss.com*/
+*,:after,:before {
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box
+}
+
+:after,:before {
+    --tw-content: ""
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: EuclidFlex,sans-serif;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4
+}
+
+body {
+    line-height: inherit;
+    margin: 0
+}
+
+hr {
+    border-top-width: 1px;
+    color: inherit;
+    height: 0
+}
+
+abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+code,kbd,pre,samp {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+table {
+    border-collapse: collapse;
+    border-color: inherit;
+    text-indent: 0
+}
+
+button,input,optgroup,select,textarea {
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    margin: 0;
+    padding: 0
+}
+
+button,select {
+    text-transform: none
+}
+
+[type=button],[type=reset],[type=submit],button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+}
+
+:-moz-focusring {
+    outline: auto
+}
+
+:-moz-ui-invalid {
+    box-shadow: none
+}
+
+progress {
+    vertical-align: baseline
+}
+
+::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+summary {
+    display: list-item
+}
+
+blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
+    margin: 0
+}
+
+fieldset {
+    margin: 0
+}
+
+fieldset,legend {
+    padding: 0
+}
+
+menu,ol,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+textarea {
+    resize: vertical
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+    color: #9ca3af;
+    opacity: 1
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+    color: #9ca3af;
+    opacity: 1
+}
+
+input::placeholder,textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1
+}
+
+[role=button],button {
+    cursor: pointer
+}
+
+:disabled {
+    cursor: default
+}
+
+audio,canvas,embed,iframe,img,object,svg,video {
+    display: block;
+    vertical-align: middle
+}
+
+img,video {
+    height: auto;
+    max-width: 100%
+}
+
+[hidden] {
+    display: none
+}
+
+*,:after,:before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia:
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width:640px;
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:768px
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width:1024px;
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width:1280px;
+        padding-left: 5rem;
+        padding-right: 5rem
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width:1536px;
+        padding-left: 6rem;
+        padding-right: 6rem
+    }
+}
+
+.sr-only {
+    clip: rect(0,0,0,0);
+    border-width: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px
+}
+
+.fixed {
+    position: fixed
+}
+
+.absolute {
+    position: absolute
+}
+
+.relative {
+    position: relative
+}
+
+.inset-0 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+.top-0 {
+    top: 0
+}
+
+.left-0 {
+    left: 0
+}
+
+.top-\[2px\] {
+    top: 2px
+}
+
+.bottom-10 {
+    bottom: 2.5rem
+}
+
+.right-10 {
+    right: 2.5rem
+}
+
+.top-1\/2 {
+    top: 50%
+}
+
+.left-1\/2 {
+    left: 50%
+}
+
+.z-10 {
+    z-index: 10
+}
+
+.z-30 {
+    z-index: 30
+}
+
+.z-50 {
+    z-index: 50
+}
+
+.col-span-2 {
+    grid-column: span 2/span 2
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.-my-2 {
+    margin-bottom: -.5rem;
+    margin-top: -.5rem
+}
+
+.my-3 {
+    margin-bottom: .75rem;
+    margin-top: .75rem
+}
+
+.my-2 {
+    margin-bottom: .5rem;
+    margin-top: .5rem
+}
+
+.my-6 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem
+}
+
+.my-12 {
+    margin-bottom: 3rem;
+    margin-top: 3rem
+}
+
+.\!mb-20 {
+    margin-bottom: 5rem!important
+}
+
+.mt-4 {
+    margin-top: 1rem
+}
+
+.mr-4 {
+    margin-right: 1rem
+}
+
+.mb-4 {
+    margin-bottom: 1rem
+}
+
+.ml-8 {
+    margin-left: 2rem
+}
+
+.mt-10 {
+    margin-top: 2.5rem
+}
+
+.mr-6 {
+    margin-right: 1.5rem
+}
+
+.mt-8 {
+    margin-top: 2rem
+}
+
+.-mr-2 {
+    margin-right: -.5rem
+}
+
+.mt-\[21px\] {
+    margin-top: 21px
+}
+
+.mr-3 {
+    margin-right: .75rem
+}
+
+.mr-1 {
+    margin-right: .25rem
+}
+
+.ml-6 {
+    margin-left: 1.5rem
+}
+
+.ml-4 {
+    margin-left: 1rem
+}
+
+.mb-8 {
+    margin-bottom: 2rem
+}
+
+.ml-2 {
+    margin-left: .5rem
+}
+
+.mr-2 {
+    margin-right: .5rem
+}
+
+.mt-2 {
+    margin-top: .5rem
+}
+
+.mr-8 {
+    margin-right: 2rem
+}
+
+.mt-6 {
+    margin-top: 1.5rem
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem
+}
+
+.mt-1 {
+    margin-top: .25rem
+}
+
+.mt-12 {
+    margin-top: 3rem
+}
+
+.mr-5 {
+    margin-right: 1.25rem
+}
+
+.mb-2 {
+    margin-bottom: .5rem
+}
+
+.block {
+    display: block
+}
+
+.inline-block {
+    display: inline-block
+}
+
+.flex {
+    display: flex
+}
+
+.inline-flex {
+    display: inline-flex
+}
+
+.grid {
+    display: grid
+}
+
+.hidden {
+    display: none
+}
+
+.h-\[43px\] {
+    height: 43px
+}
+
+.h-full {
+    height: 100%
+}
+
+.h-\[20px\] {
+    height: 20px
+}
+
+.h-\[32px\] {
+    height: 32px
+}
+
+.h-\[16px\] {
+    height: 16px
+}
+
+.h-\[28px\] {
+    height: 28px
+}
+
+.h-\[50px\] {
+    height: 50px
+}
+
+.h-\[40px\] {
+    height: 40px
+}
+
+.h-\[70px\] {
+    height: 70px
+}
+
+.h-\[35px\] {
+    height: 35px
+}
+
+.h-\[150px\] {
+    height: 150px
+}
+
+.h-\[10px\] {
+    height: 10px
+}
+
+.h-\[62px\] {
+    height: 62px
+}
+
+.min-h-\[60px\] {
+    min-height: 60px
+}
+
+.min-h-\[50px\] {
+    min-height: 50px
+}
+
+.w-\[43px\] {
+    width: 43px
+}
+
+.w-\[30px\] {
+    width: 30px
+}
+
+.w-full {
+    width: 100%
+}
+
+.w-\[20px\] {
+    width: 20px
+}
+
+.w-\[32px\] {
+    width: 32px
+}
+
+.w-\[16px\] {
+    width: 16px
+}
+
+.w-\[28px\] {
+    width: 28px
+}
+
+.w-\[50px\] {
+    width: 50px
+}
+
+.w-11\/12 {
+    width: 91.666667%
+}
+
+.w-\[35px\] {
+    width: 35px
+}
+
+.w-\[110px\] {
+    width: 110px
+}
+
+.w-\[150px\] {
+    width: 150px
+}
+
+.w-\[12px\] {
+    width: 12px
+}
+
+.w-\[62px\] {
+    width: 62px
+}
+
+.min-w-\[125px\] {
+    min-width: 125px
+}
+
+.min-w-\[20px\] {
+    min-width: 20px
+}
+
+.max-w-\[650px\] {
+    max-width: 650px
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0
+}
+
+.origin-top {
+    transform-origin: top
+}
+
+.-translate-x-1\/2 {
+    --tw-translate-x: -50%
+}
+
+.-translate-x-1\/2,.-translate-y-1\/2 {
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.-translate-y-1\/2 {
+    --tw-translate-y: -50%
+}
+
+.scale-0 {
+    --tw-scale-x: 0;
+    --tw-scale-y: 0
+}
+
+.scale-0,.scale-90 {
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.scale-90 {
+    --tw-scale-x: .9;
+    --tw-scale-y: .9
+}
+
+.scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1
+}
+
+.scale-100,.transform {
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+@-webkit-keyframes ping {
+    75%,to {
+        opacity: 0;
+        transform: scale(2)
+    }
+}
+
+@keyframes ping {
+    75%,to {
+        opacity: 0;
+        transform: scale(2)
+    }
+}
+
+.animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.cursor-default {
+    cursor: default
+}
+
+.snap-center {
+    scroll-snap-align: center
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1,minmax(0,1fr))
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr))
+}
+
+.flex-col {
+    flex-direction: column
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse
+}
+
+.flex-wrap {
+    flex-wrap: wrap
+}
+
+.items-start {
+    align-items: flex-start
+}
+
+.items-center {
+    align-items: center
+}
+
+.justify-start {
+    justify-content: flex-start
+}
+
+.justify-end {
+    justify-content: flex-end
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.justify-between {
+    justify-content: space-between
+}
+
+.gap-4 {
+    gap: 1rem
+}
+
+.gap-8 {
+    gap: 2rem
+}
+
+.gap-6 {
+    gap: 1.5rem
+}
+
+.gap-12 {
+    gap: 3rem
+}
+
+.space-x-10>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(2.5rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2.5rem*var(--tw-space-x-reverse))
+}
+
+.space-y-4>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+}
+
+.space-y-8>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-bottom: calc(2rem*var(--tw-space-y-reverse));
+    margin-top: calc(2rem*(1 - var(--tw-space-y-reverse)))
+}
+
+.overflow-auto {
+    overflow: auto
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.rounded-xl {
+    border-radius: 10px
+}
+
+.rounded-full {
+    border-radius: 999px
+}
+
+.rounded-md {
+    border-radius: .375rem
+}
+
+.rounded {
+    border-radius: 5px
+}
+
+.border-t {
+    border-top-width: 1px
+}
+
+.border-b {
+    border-bottom-width: 1px
+}
+
+.border-gray {
+    --tw-border-opacity: 1;
+    border-color: rgb(136 148 157/var(--tw-border-opacity))
+}
+
+.border-gray-light {
+    border-color: rgba(136,148,157,.12)
+}
+
+.border-gray-darker {
+    border-color: hsla(0,0%,44%,.3)
+}
+
+.border-gray-dark {
+    border-color: hsla(0,0%,59%,.3)
+}
+
+.bg-gray-lighter {
+    background-color: hsla(0,0%,96%,.07)
+}
+
+.bg-gray-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+}
+
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+}
+
+.bg-gray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235/var(--tw-bg-opacity))
+}
+
+.bg-gray-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219/var(--tw-bg-opacity))
+}
+
+.bg-gray-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175/var(--tw-bg-opacity))
+}
+
+.bg-gray-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 114 128/var(--tw-bg-opacity))
+}
+
+.bg-gray-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+}
+
+.bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+}
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+}
+
+.bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+}
+
+.bg-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgb(136 148 157/var(--tw-bg-opacity))
+}
+
+.bg-gray-dark {
+    background-color: hsla(0,0%,59%,.3)
+}
+
+.bg-gray-darker {
+    background-color: hsla(0,0%,44%,.3)
+}
+
+.bg-gray-light {
+    background-color: rgba(136,148,157,.12)
+}
+
+.bg-orange-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 247 237/var(--tw-bg-opacity))
+}
+
+.bg-orange-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 237 213/var(--tw-bg-opacity))
+}
+
+.bg-orange-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 215 170/var(--tw-bg-opacity))
+}
+
+.bg-orange-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 186 116/var(--tw-bg-opacity))
+}
+
+.bg-orange-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 146 60/var(--tw-bg-opacity))
+}
+
+.bg-orange-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 115 22/var(--tw-bg-opacity))
+}
+
+.bg-orange-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 88 12/var(--tw-bg-opacity))
+}
+
+.bg-orange-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(194 65 12/var(--tw-bg-opacity))
+}
+
+.bg-orange-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(154 52 18/var(--tw-bg-opacity))
+}
+
+.bg-orange-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(124 45 18/var(--tw-bg-opacity))
+}
+
+.bg-orange {
+    --tw-bg-opacity: 1;
+    background-color: rgb(235 101 52/var(--tw-bg-opacity))
+}
+
+.bg-orange-light {
+    background-color: rgba(235,101,52,.12)
+}
+
+.bg-yellow-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 252 232/var(--tw-bg-opacity))
+}
+
+.bg-yellow-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 249 195/var(--tw-bg-opacity))
+}
+
+.bg-yellow-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 240 138/var(--tw-bg-opacity))
+}
+
+.bg-yellow-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 224 71/var(--tw-bg-opacity))
+}
+
+.bg-yellow-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 204 21/var(--tw-bg-opacity))
+}
+
+.bg-yellow-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8/var(--tw-bg-opacity))
+}
+
+.bg-yellow-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(202 138 4/var(--tw-bg-opacity))
+}
+
+.bg-yellow-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(161 98 7/var(--tw-bg-opacity))
+}
+
+.bg-yellow-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(133 77 14/var(--tw-bg-opacity))
+}
+
+.bg-yellow-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(113 63 18/var(--tw-bg-opacity))
+}
+
+.bg-yellow {
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 185 52/var(--tw-bg-opacity))
+}
+
+.bg-yellow-light {
+    background-color: rgba(217,185,52,.12)
+}
+
+.bg-green-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 253 244/var(--tw-bg-opacity))
+}
+
+.bg-green-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 252 231/var(--tw-bg-opacity))
+}
+
+.bg-green-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(187 247 208/var(--tw-bg-opacity))
+}
+
+.bg-green-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(134 239 172/var(--tw-bg-opacity))
+}
+
+.bg-green-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(74 222 128/var(--tw-bg-opacity))
+}
+
+.bg-green-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94/var(--tw-bg-opacity))
+}
+
+.bg-green-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(22 163 74/var(--tw-bg-opacity))
+}
+
+.bg-green-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 128 61/var(--tw-bg-opacity))
+}
+
+.bg-green-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(22 101 52/var(--tw-bg-opacity))
+}
+
+.bg-green-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 83 45/var(--tw-bg-opacity))
+}
+
+.bg-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(145 186 53/var(--tw-bg-opacity))
+}
+
+.bg-green-light {
+    background-color: rgba(145,186,53,.12)
+}
+
+.bg-blue-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 246 255/var(--tw-bg-opacity))
+}
+
+.bg-blue-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 234 254/var(--tw-bg-opacity))
+}
+
+.bg-blue-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(191 219 254/var(--tw-bg-opacity))
+}
+
+.bg-blue-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(147 197 253/var(--tw-bg-opacity))
+}
+
+.bg-blue-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(96 165 250/var(--tw-bg-opacity))
+}
+
+.bg-blue-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(59 130 246/var(--tw-bg-opacity))
+}
+
+.bg-blue-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235/var(--tw-bg-opacity))
+}
+
+.bg-blue-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216/var(--tw-bg-opacity))
+}
+
+.bg-blue-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175/var(--tw-bg-opacity))
+}
+
+.bg-blue-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 58 138/var(--tw-bg-opacity))
+}
+
+.bg-blue {
+    --tw-bg-opacity: 1;
+    background-color: rgb(52 204 217/var(--tw-bg-opacity))
+}
+
+.bg-blue-light {
+    background-color: rgba(52,204,217,.12)
+}
+
+.bg-purple-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 245 255/var(--tw-bg-opacity))
+}
+
+.bg-purple-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 232 255/var(--tw-bg-opacity))
+}
+
+.bg-purple-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(233 213 255/var(--tw-bg-opacity))
+}
+
+.bg-purple-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(216 180 254/var(--tw-bg-opacity))
+}
+
+.bg-purple-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(192 132 252/var(--tw-bg-opacity))
+}
+
+.bg-purple-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(168 85 247/var(--tw-bg-opacity))
+}
+
+.bg-purple-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(147 51 234/var(--tw-bg-opacity))
+}
+
+.bg-purple-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(126 34 206/var(--tw-bg-opacity))
+}
+
+.bg-purple-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(107 33 168/var(--tw-bg-opacity))
+}
+
+.bg-purple-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(88 28 135/var(--tw-bg-opacity))
+}
+
+.bg-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(141 52 217/var(--tw-bg-opacity))
+}
+
+.bg-purple-light {
+    background-color: rgba(141,52,217,.12)
+}
+
+.bg-purple-space {
+    --tw-bg-opacity: 1;
+    background-color: rgb(43 29 65/var(--tw-bg-opacity))
+}
+
+.bg-purple-belle {
+    --tw-bg-opacity: 1;
+    background-color: rgb(155 34 126/var(--tw-bg-opacity))
+}
+
+.bg-purple-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 21 59/var(--tw-bg-opacity))
+}
+
+.bg-purple-footer {
+    --tw-bg-opacity: 1;
+    background-color: rgb(46 32 69/var(--tw-bg-opacity))
+}
+
+.bg-purple-nav {
+    --tw-bg-opacity: 1;
+    background-color: rgb(37 21 61/var(--tw-bg-opacity))
+}
+
+.bg-pink-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 242 248/var(--tw-bg-opacity))
+}
+
+.bg-pink-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 231 243/var(--tw-bg-opacity))
+}
+
+.bg-pink-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 207 232/var(--tw-bg-opacity))
+}
+
+.bg-pink-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 168 212/var(--tw-bg-opacity))
+}
+
+.bg-pink-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 114 182/var(--tw-bg-opacity))
+}
+
+.bg-pink-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(236 72 153/var(--tw-bg-opacity))
+}
+
+.bg-pink-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 39 119/var(--tw-bg-opacity))
+}
+
+.bg-pink-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(190 24 93/var(--tw-bg-opacity))
+}
+
+.bg-pink-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(157 23 77/var(--tw-bg-opacity))
+}
+
+.bg-pink-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(131 24 67/var(--tw-bg-opacity))
+}
+
+.bg-pink {
+    --tw-bg-opacity: 1;
+    background-color: rgb(221 45 160/var(--tw-bg-opacity))
+}
+
+.bg-pink-light {
+    background-color: rgba(221,45,160,.12)
+}
+
+.bg-mint {
+    --tw-bg-opacity: 1;
+    background-color: rgb(52 217 64/var(--tw-bg-opacity))
+}
+
+.bg-mint-light {
+    background-color: rgba(52,217,64,.2)
+}
+
+.bg-background {
+    --tw-bg-opacity: 1;
+    background-color: rgb(246 246 249/var(--tw-bg-opacity))
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+}
+
+.bg-transparent {
+    background-color: transparent
+}
+
+.bg-top {
+    background-position: top
+}
+
+.fill-current {
+    fill: currentColor
+}
+
+.object-contain {
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.p-2 {
+    padding: .5rem
+}
+
+.py-44 {
+    padding-bottom: 11rem;
+    padding-top: 11rem
+}
+
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem
+}
+
+.py-2 {
+    padding-bottom: .5rem;
+    padding-top: .5rem
+}
+
+.py-20 {
+    padding-bottom: 5rem;
+    padding-top: 5rem
+}
+
+.py-6 {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+.py-4 {
+    padding-bottom: 1rem;
+    padding-top: 1rem
+}
+
+.px-2 {
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+
+.px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+.py-7 {
+    padding-bottom: 1.75rem;
+    padding-top: 1.75rem
+}
+
+.py-8 {
+    padding-bottom: 2rem;
+    padding-top: 2rem
+}
+
+.py-12 {
+    padding-bottom: 3rem;
+    padding-top: 3rem
+}
+
+.px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem
+}
+
+.\!px-12 {
+    padding-left: 3rem!important;
+    padding-right: 3rem!important
+}
+
+.pt-0 {
+    padding-top: 0
+}
+
+.pt-2 {
+    padding-top: .5rem
+}
+
+.pt-4 {
+    padding-top: 1rem
+}
+
+.pt-6 {
+    padding-top: 1.5rem
+}
+
+.pt-8 {
+    padding-top: 2rem
+}
+
+.pt-12 {
+    padding-top: 3rem
+}
+
+.pt-16 {
+    padding-top: 4rem
+}
+
+.pt-20 {
+    padding-top: 5rem
+}
+
+.pt-24 {
+    padding-top: 6rem
+}
+
+.pt-32 {
+    padding-top: 8rem
+}
+
+.pt-40 {
+    padding-top: 10rem
+}
+
+.pt-60 {
+    padding-top: 15rem
+}
+
+.pt-80 {
+    padding-top: 20rem
+}
+
+.pb-0 {
+    padding-bottom: 0
+}
+
+.pb-2 {
+    padding-bottom: .5rem
+}
+
+.pb-4 {
+    padding-bottom: 1rem
+}
+
+.pb-6 {
+    padding-bottom: 1.5rem
+}
+
+.pb-8 {
+    padding-bottom: 2rem
+}
+
+.pb-12 {
+    padding-bottom: 3rem
+}
+
+.pb-16 {
+    padding-bottom: 4rem
+}
+
+.pb-20 {
+    padding-bottom: 5rem
+}
+
+.pb-24 {
+    padding-bottom: 6rem
+}
+
+.pb-32 {
+    padding-bottom: 8rem
+}
+
+.pb-40 {
+    padding-bottom: 10rem
+}
+
+.pb-60 {
+    padding-bottom: 15rem
+}
+
+.pb-80 {
+    padding-bottom: 20rem
+}
+
+.pt-10 {
+    padding-top: 2.5rem
+}
+
+.pb-3 {
+    padding-bottom: .75rem
+}
+
+.pl-10 {
+    padding-left: 2.5rem
+}
+
+.pr-6 {
+    padding-right: 1.5rem
+}
+
+.pr-8 {
+    padding-right: 2rem
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-3xl {
+    font-size: 2.625rem
+}
+
+.text-base {
+    font-size: 1.1875rem
+}
+
+.text-sm {
+    font-size: 1rem
+}
+
+.text-xs {
+    font-size: .875rem
+}
+
+.text-2xs {
+    font-size: .75rem
+}
+
+.text-xl {
+    font-size: 1.5625rem
+}
+
+.text-md {
+    font-size: 1.375rem
+}
+
+.font-semibold {
+    font-weight: 600
+}
+
+.font-medium {
+    font-weight: 500
+}
+
+.font-bold {
+    font-weight: 700
+}
+
+.leading-6 {
+    line-height: 1.5rem
+}
+
+.text-purple-dark {
+    --tw-text-opacity: 1;
+    color: rgb(36 21 59/var(--tw-text-opacity))
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175/var(--tw-text-opacity))
+}
+
+.text-purple-nav {
+    --tw-text-opacity: 1;
+    color: rgb(37 21 61/var(--tw-text-opacity))
+}
+
+.\!text-mint {
+    --tw-text-opacity: 1!important;
+    color: rgb(52 217 64/var(--tw-text-opacity))!important
+}
+
+.opacity-50 {
+    opacity: .5
+}
+
+.opacity-75 {
+    opacity: .75
+}
+
+.opacity-60 {
+    opacity: .6
+}
+
+.opacity-0 {
+    opacity: 0
+}
+
+.opacity-100 {
+    opacity: 1
+}
+
+.opacity-40 {
+    opacity: .4
+}
+
+.shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+}
+
+.transition {
+    transition-property: color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1)
+}
+
+.duration-150,.transition {
+    transition-duration: .15s
+}
+
+.duration-300 {
+    transition-duration: .3s
+}
+
+.ease-in-out {
+    transition-timing-function: cubic-bezier(.4,0,.2,1)
+}
+
+.ease-out {
+    transition-timing-function: cubic-bezier(0,0,.2,1)
+}
+
+.ease-in {
+    transition-timing-function: cubic-bezier(.4,0,1,1)
+}
+
+.button {
+    border-radius: 5px;
+    padding: .5rem 1.5rem;
+    white-space: nowrap
+}
+
+.button__primary {
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: rgb(43 29 65/var(--tw-bg-opacity));
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-weight: 500
+}
+
+.button__primary .team-social__linkedin,.button__primary .team-social__medium,.button__primary .team-social__twitter {
+    filter: invert(100%)
+}
+
+.button__primary .title__line {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.button__primary .title__line:before {
+    background-color: #fff
+}
+
+.button__primary:not(.navbar) .card *,.button__primary:not(.navbar) .content h1,.button__primary:not(.navbar) .content h2,.button__primary:not(.navbar) .content h3,.button__primary:not(.navbar) .content p,.button__primary:not(.navbar) :not(.tag) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.button__primary:not(.navbar) .link__line {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255/var(--tw-border-opacity))
+}
+
+.button__primary:not(.navbar) .card-modal__content {
+    background-color: #2b1d41
+}
+
+.button__dark-outline {
+    --tw-border-opacity: 1;
+    --tw-text-opacity: 1;
+    border-color: rgb(36 21 59/var(--tw-border-opacity));
+    border-width: 1px;
+    color: rgb(36 21 59/var(--tw-text-opacity));
+    font-weight: 500
+}
+
+.button__white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+}
+
+.button__white span {
+    color: #000!important
+}
+
+.button__rounded {
+    border-radius: 999px
+}
+
+:root {
+    --bp-margin-sm: 20px;
+    --bp-margin: 40px;
+    --bp-margin-lg: 60px;
+    --bp-cookie-banner-color: #2b1d41;
+    --bp-cookie-text-color: #fff;
+    --bp-cookie-active-color: #2b1d41
+}
+
+@media screen and (min-width: 961px) {
+    :root {
+        --bp-margin-sm:20px;
+        --bp-margin: 60px;
+        --bp-margin-lg: 80px
+    }
+}
+
+.bp-banner__container {
+    align-items: end;
+    bottom: 0;
+    display: grid;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    height: auto;
+    justify-content: end;
+    left: auto;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: 900
+}
+
+.bp-banner {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 9px;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+    height: auto;
+    margin-bottom: var(--bp-margin-sm);
+    margin-left: var(--bp-margin-sm);
+    margin-right: var(--bp-margin-sm);
+    overflow: hidden
+}
+
+.bp-banner .bp-banner__content {
+    grid-gap: var(--bp-margin-sm);
+    align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    padding: var(--bp-margin-sm)
+}
+
+@media screen and (min-width: 769px) {
+    .bp-banner .bp-banner__content {
+        grid-auto-flow:column
+    }
+
+    .bp-banner .bp-banner__content .bp-icon--close {
+        grid-row: auto;
+        justify-self: auto
+    }
+}
+
+.bp-banner.bp-banner--hidden {
+    display: none
+}
+
+.bp-banner .bp-banner__content__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.bp-banner .bp-banner__content__text p:last-child {
+    margin-bottom: 0
+}
+
+@media screen and (max-width: 768px) {
+    .bp-banner .bp-banner__content__text {
+        font-size:14px!important
+    }
+
+    .bp-banner .bp-banner__content__text a[href],.bp-banner .bp-banner__content__text p {
+        font-size: inherit!important
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .bp-banner {
+        font-size:14px
+    }
+
+    .bp-banner a {
+        font-size: 14px!important
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .bp-banner {
+        left:unset;
+        max-width: 500px
+    }
+}
+
+.bp-banner__cookie-settings {
+    overflow: hidden;
+    transition: height .8s ease-in-out,padding-bottom .8s ease-in-out;
+    width: calc(100% + 10px)
+}
+
+.bp-banner__cookie-settings>div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 10px
+}
+
+.cookie-banner {
+    bottom: var(--bp-margin-sm);
+    display: none;
+    left: auto;
+    max-width: 360px;
+    position: fixed;
+    right: var(--bp-margin-sm);
+    z-index: 10
+}
+
+#cookie-banner {
+    background-color: #2b1d41b8;
+    font-size: 19px
+}
+
+#cookie-banner h4 {
+    font-size: 28px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.59;
+    word-break: break-word
+}
+
+@media screen and (max-width: 959px) {
+    #cookie-banner h4 {
+        font-size:22px
+    }
+}
+
+#cookie-banner .cookie-policy-button {
+    text-decoration: underline;
+    white-space: nowrap
+}
+
+#cookie-banner .cookie-settings-accept-button,#cookie-banner .cookie-settings-save-button {
+    background-color: var(--bp-cookie-text-color);
+    border-radius: 5px;
+    color: var(--bp-cookie-banner-color);
+    padding: .5rem 1.5rem;
+    white-space: nowrap
+}
+
+#cookie-banner .cookie-settings-button {
+    text-decoration: underline;
+    white-space: nowrap
+}
+
+#cookie-banner .cookie-settings__item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0
+}
+
+#cookie-banner .bp-banner__content__text {
+    color: #fff
+}
+
+#cookie-banner .bp-banner__content__text>div {
+    margin-bottom: 15px
+}
+
+#cookie-banner .bp-banner__content__text h4 {
+    color: #fff;
+    margin-bottom: 10px
+}
+
+#cookie-banner .bp-banner__content__text a[href] {
+    color: #fff;
+    vertical-align: baseline
+}
+
+#cookie-banner .bp-banner__content__text .cookies_buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px
+}
+
+#cookie-banner .bp-banner__content__text .cookies_buttons #bpCookieAcceptButton {
+    margin-right: 10px
+}
+
+#cookie-banner .bp-banner__content__text .cookies_buttons #bpCookieSaveButton {
+    display: none;
+    margin-right: 10px
+}
+
+#cookie-banner .bp-banner__content__text .cookie-settings__accordion-title {
+    -webkit-padding-start: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 5px 0 5px 30px!important;
+    padding-inline-start:0;position: relative
+}
+
+#cookie-banner .bp-banner__content__text .uk-accordion-content {
+    margin-top: 0
+}
+
+#cookie-banner .bp-banner__content__text hr {
+    margin: 0
+}
+
+.bp-banner__cookie-settings>div {
+    max-height: calc(100vh - 440px);
+    overflow-y: auto
+}
+
+.cookie-settings__light-text {
+    align-self: center;
+    color: #c9c9c9;
+    font-weight: 300
+}
+
+h5.cookie-settings__light-text {
+    margin-top: 15px
+}
+
+.active-inactive-text {
+    margin-right: 10px
+}
+
+.active-inactive-text>span {
+    display: none
+}
+
+@media (max-width: 480px) {
+    .active-inactive-text {
+        display:none
+    }
+}
+
+.cookie-settings__switch-block {
+    align-content: center;
+    display: flex
+}
+
+input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1
+}
+
+#cookie-settings-modal {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out
+}
+
+.tab {
+    color: var(--bp-cookie-text-color);
+    overflow: hidden;
+    width: 100%
+}
+
+.tab-label {
+    cursor: pointer;
+    position: relative
+}
+
+.tab-label:before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='2' stroke-linejoin='round' d='m7 4 6 6-6 6'/%3E%3C/svg%3E");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: var(--bp-cookie-text-color);
+    content: " ";
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: all .35s;
+    width: 19px
+}
+
+.tab-content {
+    max-height: 0;
+    transition: all .35s
+}
+
+input:checked+.tab-label:before {
+    transform: rotate(90deg)
+}
+
+input:checked~.tab-content {
+    margin: 0 0 var(--bp-margin-sm);
+    max-height: 100vh
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block
+}
+
+.toggle-switch {
+    background-color: #767676;
+    border: .5px solid #767676;
+    border-radius: 16px;
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    transition: background .25s;
+    vertical-align: middle;
+    width: 47px
+}
+
+.toggle-switch:after,.toggle-switch:before {
+    content: ""
+}
+
+.toggle-switch:before {
+    background-color: #c9c9c9;
+    border-radius: 50%;
+    display: block;
+    height: 24px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: left .25s;
+    width: 24px
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: var(--bp-cookie-active-color)
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    background: var(--bp-cookie-text-color);
+    left: 18px
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden
+}
+
+.toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px
+}
+
+[class*=" flag-"],[class^=flag-] {
+    background-repeat: no-repeat
+}
+
+.flag-de {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.574 19.574'%3E%3Cg data-name='Group 20' fill='%23ff4b55'%3E%3Cpath data-name='Path 24' d='M15.292 0H4.282A4.282 4.282 0 0 0 0 4.282v2.243h19.574V4.282A4.282 4.282 0 0 0 15.292 0Z'/%3E%3Cpath data-name='Path 25' d='M0 15.292a4.282 4.282 0 0 0 4.282 4.282h11.01a4.282 4.282 0 0 0 4.282-4.282v-2.243H0Z'/%3E%3C/g%3E%3Cpath data-name='Rectangle 2' fill='%23f5f5f5' d='M0 6.525h19.574v6.524H0z'/%3E%3C/svg%3E")
+}
+
+.flag-en {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cg data-name='Group 2300' transform='translate(0 -.613)'%3E%3Crect data-name='Rectangle 929' width='20' height='20' rx='4.5' transform='translate(0 .613)' fill='%23f5f5f5'/%3E%3Cpath data-name='Rectangle 930' fill='%23ff4b55' d='M8 .613h4v20H8z'/%3E%3Cpath data-name='Rectangle 931' fill='%23ff4b55' d='M20 8.613v4H0v-4z'/%3E%3C/g%3E%3C/svg%3E")
+}
+
+.flag-es {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.574' height='19.574'%3E%3Cg data-name='Group 20' fill='%23ff4b55'%3E%3Cpath data-name='Path 24' d='M15.292 0H4.282A4.282 4.282 0 0 0 0 4.282v2.243h19.574V4.282A4.282 4.282 0 0 0 15.292 0Z'/%3E%3Cpath data-name='Path 25' d='M0 15.292a4.282 4.282 0 0 0 4.282 4.282h11.01a4.282 4.282 0 0 0 4.282-4.282v-2.243H0Z'/%3E%3C/g%3E%3Cpath data-name='Rectangle 2' fill='%23ffce00' d='M0 6.525h19.574v6.524H0z'/%3E%3C/svg%3E")
+}
+
+.flag-fr {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.574' height='19.574'%3E%3Cg data-name='Group 20'%3E%3Cpath data-name='Path 24' d='M0 4.282v11.01a4.282 4.282 0 0 0 4.282 4.282h2.243V0H4.282A4.282 4.282 0 0 0 0 4.282Z' fill='%2320248d'/%3E%3Cpath data-name='Path 25' d='M15.292 19.574a4.282 4.282 0 0 0 4.282-4.282V4.282A4.282 4.282 0 0 0 15.292 0h-2.243v19.574Z' fill='%23ff4b55'/%3E%3C/g%3E%3Cpath data-name='Rectangle 2' fill='%23f5f5f5' d='M6.525 19.574V0h6.524v19.574z'/%3E%3C/svg%3E")
+}
+
+.flag-it {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.574' height='19.574'%3E%3Cg data-name='Group 20'%3E%3Cpath data-name='Path 24' d='M0 4.282v11.01a4.282 4.282 0 0 0 4.282 4.282h2.243V0H4.282A4.282 4.282 0 0 0 0 4.282Z' fill='%2348c338'/%3E%3Cpath data-name='Path 25' d='M15.292 19.574a4.282 4.282 0 0 0 4.282-4.282V4.282A4.282 4.282 0 0 0 15.292 0h-2.243v19.574Z' fill='%23ff4b55'/%3E%3C/g%3E%3Cpath data-name='Rectangle 2' fill='%23f5f5f5' d='M6.525 19.574V0h6.524v19.574z'/%3E%3C/svg%3E")
+}
+
+.flag-pl {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.574' height='19.574'%3E%3Cg data-name='Group 20'%3E%3Cpath data-name='Path 24' d='M4.282 19.574h11.01a4.282 4.282 0 0 0 4.282-4.282V9.814H0v5.478a4.282 4.282 0 0 0 4.282 4.282Z' fill='%23ff4b55'/%3E%3Cpath data-name='Rectangle 928' d='M19.574 9.787H0V4.5A4.5 4.5 0 0 1 4.5 0h10.574a4.5 4.5 0 0 1 4.5 4.5v5.287Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E")
+}
+
+.footer__social li {
+    -webkit-margin-end: 0!important;
+    margin-inline-end:0!important}
+
+.footer__social li:focus,.footer__social li:hover {
+    opacity: .8
+}
+
+.footer__social__icon {
+    background-color: #fff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 30px;
+    border-radius: 100px;
+    display: inline-block;
+    height: 36px;
+    width: 36px
+}
+
+.footer__social--facebook {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 10H9v2h1.5v6H13v-6h1.821L15 10h-2v-.834c0-.477.096-.666.557-.666H15V6h-1.904c-1.798 0-2.596.792-2.596 2.307V10z' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+.footer__social--instagram {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.083 6a3.75 3.75 0 0 1 3.75 3.75v4.5a3.75 3.75 0 0 1-3.75 3.75h-4.5a3.75 3.75 0 0 1-3.75-3.75v-4.5A3.75 3.75 0 0 1 9.583 6h4.5zm2.625 8.25v-4.5a2.628 2.628 0 0 0-2.625-2.625h-4.5A2.628 2.628 0 0 0 6.958 9.75v4.5a2.628 2.628 0 0 0 2.625 2.625h4.5a2.628 2.628 0 0 0 2.625-2.625zM11.833 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 4.875A1.878 1.878 0 0 0 13.708 12a1.877 1.877 0 0 0-1.875-1.875c-1.033 0-1.875.84-1.875 1.875 0 1.034.842 1.875 1.875 1.875zm3.225-4.7a.4.4 0 1 1 0-.8.4.4 0 0 1 0 .8z'/%3E%3C/svg%3E")
+}
+
+.footer__social--linkedin {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.313 8.903V17h-2.77V8.903h2.77zm6.8-.19c1.822 0 3.189 1.157 3.189 3.644V17h-2.77v-4.332c0-1.088-.401-1.83-1.404-1.83-.765 0-1.22.5-1.42.984-.074.173-.092.414-.092.656V17h-2.77V8.903h2.77v1.174l.024-.031c.162-.205 1.114-1.333 2.473-1.333zM6.946 5c.948 0 1.531.605 1.549 1.399 0 .777-.601 1.399-1.567 1.399H6.91c-.93 0-1.531-.622-1.531-1.399 0-.794.62-1.399 1.567-1.399z' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+.footer__social--reddit {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.127 13.58c-.69 0-1.251-.552-1.251-1.23 0-.676.562-1.228 1.251-1.228.69 0 1.251.552 1.251 1.229s-.562 1.228-1.251 1.228m.221 2.016c-.855.837-2.49.903-2.97.903s-2.118-.066-2.97-.903a.314.314 0 0 1 0-.45.328.328 0 0 1 .458 0c.538.528 1.688.717 2.512.717.82 0 1.973-.19 2.511-.717a.327.327 0 0 1 .459 0 .317.317 0 0 1 0 .45m-6.976-3.244c0-.677.562-1.228 1.251-1.228.69 0 1.251.551 1.251 1.228 0 .677-.562 1.228-1.25 1.228-.69 0-1.252-.551-1.252-1.228m12.007-1.228c0-.95-.783-1.72-1.75-1.72-.474 0-.901.185-1.216.484-1.196-.849-2.845-1.396-4.682-1.46l.797-3.684 2.605.544c.032.651.574 1.17 1.244 1.17a1.24 1.24 0 0 0 1.251-1.229A1.24 1.24 0 0 0 17.378 4c-.493 0-.913.28-1.117.686l-2.91-.608a.318.318 0 0 0-.236.042.302.302 0 0 0-.135.194s-.874 4.088-.874 4.111c-1.87.048-3.551.597-4.766 1.457a1.754 1.754 0 0 0-1.21-.478c-.968 0-1.751.77-1.751 1.719 0 .697.425 1.299 1.035 1.567a3.33 3.33 0 0 0-.041.521c0 2.646 3.136 4.789 7.005 4.789 3.868 0 7.004-2.143 7.004-4.789 0-.174-.014-.346-.04-.516a1.725 1.725 0 0 0 1.037-1.572'/%3E%3C/svg%3E")
+}
+
+.footer__social--telegram {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='m6 12.051 3.551 1.318 7.11-4.607-5.331 5.347v2.475l1.638-1.11 3.693 2.241L18.915 7z' fill='%23282828' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+.footer__social--twitter {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.833 7.302c-.472.221-.98.37-1.512.437a2.76 2.76 0 0 0 1.158-1.536 5.112 5.112 0 0 1-1.672.674A2.567 2.567 0 0 0 14.885 6c-1.7 0-2.949 1.673-2.565 3.41-2.188-.116-4.128-1.222-5.426-2.902-.69 1.248-.358 2.881.814 3.708a2.52 2.52 0 0 1-1.192-.348c-.029 1.287.845 2.49 2.112 2.758-.37.106-.777.131-1.19.048.335 1.103 1.307 1.905 2.46 1.928A5.099 5.099 0 0 1 6 15.752 7.176 7.176 0 0 0 10.036 17c4.889 0 7.65-4.355 7.484-8.26.514-.392.96-.881 1.313-1.438z' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+.footer__social--youtube {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.358 7H7.854c-1.668 0-3.02 1.314-3.02 2.935v4.13c0 1.621 1.352 2.935 3.02 2.935h8.504c1.668 0 3.02-1.314 3.02-2.935v-4.13c0-1.621-1.352-2.935-3.02-2.935zm-2.043 5.2-3.978 1.844a.159.159 0 0 1-.228-.14v-3.801c0-.116.126-.191.232-.139l3.977 1.959a.153.153 0 0 1-.003.278z'/%3E%3C/svg%3E")
+}
+
+.team__social__icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 29px;
+    width: 29px
+}
+
+.team-social__twitter {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.048' height='25.755'%3E%3Cpath d='M30.048 3.049a11.814 11.814 0 0 1-3.541 1.023 6.463 6.463 0 0 0 2.711-3.6A11.968 11.968 0 0 1 25.3 2.053 6.01 6.01 0 0 0 20.8 0a6.431 6.431 0 0 0-6 7.982A17.218 17.218 0 0 1 2.092 1.19 6.729 6.729 0 0 0 4 9.871a5.9 5.9 0 0 1-2.791-.813 6.439 6.439 0 0 0 4.944 6.457 5.868 5.868 0 0 1-2.784.111 6.221 6.221 0 0 0 5.758 4.514A11.938 11.938 0 0 1 0 22.834a16.8 16.8 0 0 0 9.45 2.921c11.446 0 17.912-10.2 17.522-19.34a12.954 12.954 0 0 0 3.076-3.366Z' fill='currentColor'/%3E%3C/svg%3E")
+}
+
+.team-social__medium {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32.062' height='25.454'%3E%3Cpath data-name='Path 873' d='M3.803 5.193a1.242 1.242 0 0 0-.4-1.048l-3-3.609v-.539h9.3l7.185 15.757L23.203 0h8.861v.536l-2.561 2.457a.748.748 0 0 0-.284.718v18.032a.748.748 0 0 0 .284.718l2.5 2.454v.539H19.429v-.539l2.59-2.514c.254-.254.254-.329.254-.718V7.108l-7.2 18.286h-.97L5.718 7.108v12.256a1.691 1.691 0 0 0 .464 1.407l3.368 4.085v.539H.003v-.539l3.368-4.085a1.631 1.631 0 0 0 .434-1.407Z' fill='currentColor'/%3E%3C/svg%3E")
+}
+
+.team-social__linkedin {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28.505' height='28.505'%3E%3Cg data-name='icon-social-facebook copy 2'%3E%3Cpath data-name='Combined Shape Copy' d='M22.4 28.5V18.214c0-2.585-.884-4.347-3.1-4.347a3.364 3.364 0 0 0-3.135 2.333 4.557 4.557 0 0 0-.2 1.559V28.5H9.852V9.273h6.112v2.787s2.21-3.241 5.506-3.241c4.021 0 7.035 2.751 7.035 8.657V28.5Zm-22.04 0V9.273h6.112V28.5ZM3.377 6.644A3.231 3.231 0 0 1 0 3.324 3.253 3.253 0 0 1 3.457 0a3.242 3.242 0 0 1 3.417 3.324 3.253 3.253 0 0 1-3.457 3.32Z' fill='currentColor'/%3E%3C/g%3E%3C/svg%3E")
+}
+
+.bg-purple-dark .team-social__linkedin,.bg-purple-dark .team-social__medium,.bg-purple-dark .team-social__twitter,.bg-purple-space .team-social__linkedin,.bg-purple-space .team-social__medium,.bg-purple-space .team-social__twitter {
+    filter: invert(100%)
+}
+
+.navbar .nav__item a:before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.nav__item>.submenu {
+    transform: translatex(0) scale(0)
+}
+
+.nav__item:hover>.submenu {
+    transform: translatex(0) scale(1)
+}
+
+.horizontal-slider-container {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%
+}
+
+.horizontal-slider-container .horizonal-slider {
+    grid-gap: 15px;
+    -ms-overflow-style: none;
+    display: grid;
+    grid-template-columns: repeat(100,calc(95% - 20px));
+    list-style: none;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none
+}
+
+.horizontal-slider-container .horizonal-slider::-webkit-scrollbar {
+    display: none
+}
+
+.horizontal-slider-container .horizonal-slider .card {
+    padding: 22.5px;
+    scroll-snap-align: center
+}
+
+.horizontal-slider-container .horizonal-slider .card:first-child {
+    margin-left: 2rem
+}
+
+.horizontal-slider-container .horizonal-slider .card:last-child {
+    margin-right: 2rem
+}
+
+.supply__item:nth-child(2) .supply__indicator {
+    opacity: .7
+}
+
+.supply__item:nth-child(3) .supply__indicator {
+    opacity: .4
+}
+
+.supply__item:nth-child(n+4) .supply__indicator {
+    opacity: .2
+}
+
+.tag {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: .75rem;
+    padding: .25rem .75rem
+}
+
+.tag__orange {
+    --tw-text-opacity: 1;
+    background-color: rgba(235,101,52,.12);
+    color: rgb(235 101 52/var(--tw-text-opacity))
+}
+
+.tag__mint {
+    --tw-text-opacity: 1;
+    background-color: rgba(52,217,64,.2);
+    color: rgb(52 217 64/var(--tw-text-opacity))
+}
+
+.tag__green {
+    --tw-text-opacity: 1;
+    background-color: rgba(145,186,53,.12);
+    color: rgb(145 186 53/var(--tw-text-opacity))
+}
+
+.tag__pink {
+    --tw-text-opacity: 1;
+    background-color: rgba(221,45,160,.12);
+    color: rgb(221 45 160/var(--tw-text-opacity))
+}
+
+.tag__yellow {
+    --tw-text-opacity: 1;
+    background-color: rgba(217,185,52,.12);
+    color: rgb(217 185 52/var(--tw-text-opacity))
+}
+
+.tag__blue {
+    --tw-text-opacity: 1;
+    background-color: rgba(52,204,217,.12);
+    color: rgb(52 204 217/var(--tw-text-opacity))
+}
+
+.tag__purple {
+    --tw-text-opacity: 1;
+    background-color: rgba(141,52,217,.12);
+    color: rgb(141 52 217/var(--tw-text-opacity))
+}
+
+.tag__gray {
+    --tw-text-opacity: 1;
+    background-color: rgba(136,148,157,.12);
+    color: rgb(136 148 157/var(--tw-text-opacity))
+}
+
+.tag__rounded {
+    border-radius: 999px
+}
+
+.tiles__module .grid .border-r:last-child {
+    border: none!important
+}
+
+.title__line {
+    --tw-text-opacity: 1;
+    color: rgb(36 21 59/var(--tw-text-opacity));
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 2rem
+}
+
+@media (min-width: 1024px) {
+    .title__line {
+        font-size:2.625rem
+    }
+}
+
+.title__line:before {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    margin-right: 1.25rem;
+    position: relative;
+    vertical-align: middle;
+    width: 35px
+}
+
+@media (min-width: 1024px) {
+    .title__line:before {
+        width:95px
+    }
+}
+
+.bg-purple-dark .title__line,.bg-purple-space .title__line {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.bg-purple-dark .title__line:before,.bg-purple-space .title__line:before {
+    background-color: #fff
+}
+
+.link__line {
+    --tw-border-opacity: 1;
+    border-bottom-width: 1px;
+    border-color: rgb(36 21 59/var(--tw-border-opacity));
+    padding-bottom: .25rem
+}
+
+.content h1,.link__line {
+    --tw-text-opacity: 1;
+    color: rgb(36 21 59/var(--tw-text-opacity))
+}
+
+.content h1 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1rem
+}
+
+@media (min-width: 1024px) {
+    .content h1 {
+        font-size:3.5625rem;
+        line-height: 4.125rem;
+        margin-bottom: 2rem
+    }
+}
+
+.content h2 {
+    font-size: 2.625rem
+}
+
+.content h2,.content h3 {
+    --tw-text-opacity: 1;
+    color: rgb(36 21 59/var(--tw-text-opacity));
+    font-weight: 600
+}
+
+.content h3 {
+    font-size: 1.1875rem;
+    margin-top: .5rem
+}
+
+@media (min-width: 1024px) {
+    .content h3 {
+        font-size:2rem
+    }
+}
+
+.content p {
+    --tw-text-opacity: 1;
+    color: rgb(36 21 59/var(--tw-text-opacity))
+}
+
+.content__text p {
+    font-size: 1rem;
+    opacity: .5
+}
+
+@media (min-width: 1024px) {
+    .content__text p {
+        font-size:1.1875rem
+    }
+}
+
+.content__banner p {
+    font-size: .875rem
+}
+
+@media (min-width: 1024px) {
+    .content__banner p {
+        font-size:1.5625rem
+    }
+}
+
+.content__banner-slim p {
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media (min-width: 1024px) {
+    .content__banner-slim p {
+        width:50%
+    }
+}
+
+.content a {
+    --tw-border-opacity: 1;
+    --tw-text-opacity: 1;
+    border-bottom-width: 1px;
+    border-color: rgb(36 21 59/var(--tw-border-opacity));
+    color: rgb(36 21 59/var(--tw-text-opacity));
+    display: inline-block;
+    padding-bottom: .25rem
+}
+
+.bg-purple-dark:not(.navbar) .card *,.bg-purple-dark:not(.navbar) .content h1,.bg-purple-dark:not(.navbar) .content h2,.bg-purple-dark:not(.navbar) .content h3,.bg-purple-dark:not(.navbar) .content p,.bg-purple-dark:not(.navbar) :not(.tag),.bg-purple-space:not(.navbar) .card *,.bg-purple-space:not(.navbar) .content h1,.bg-purple-space:not(.navbar) .content h2,.bg-purple-space:not(.navbar) .content h3,.bg-purple-space:not(.navbar) .content p,.bg-purple-space:not(.navbar) :not(.tag) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity))
+}
+
+.bg-purple-dark:not(.navbar) .link__line,.bg-purple-space:not(.navbar) .link__line {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255/var(--tw-border-opacity))
+}
+
+[x-cloak] {
+    display: none
+}
+
+.duration-300 {
+    transition-duration: .3s
+}
+
+.ease-in {
+    transition-timing-function: cubic-bezier(.4,0,1,1)
+}
+
+.ease-out {
+    transition-timing-function: cubic-bezier(0,0,.2,1)
+}
+
+.scale-90 {
+    transform: scale(.9)
+}
+
+.scale-100 {
+    transform: scale(1)
+}
+
+.bg-purple-dark:not(.navbar) .card-modal__content,.bg-purple-space:not(.navbar) .card-modal__content {
+    background-color: #2b1d41
+}
+
+.image-full img {
+    width: 100%
+}
+
+.first\:ml-8:first-child {
+    margin-left: 2rem
+}
+
+.last\:mr-8:last-child {
+    margin-right: 2rem
+}
+
+.hover\:bg-gray-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+}
+
+.hover\:font-semibold:hover {
+    font-weight: 600
+}
+
+.hover\:text-purple-belle:hover {
+    --tw-text-opacity: 1;
+    color: rgb(155 34 126/var(--tw-text-opacity))
+}
+
+.hover\:text-gray-500:hover {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity))
+}
+
+.hover\:opacity-80:hover {
+    opacity: .8
+}
+
+.focus\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px
+}
+
+.focus\:ring-2:focus {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+}
+
+.focus\:ring-inset:focus {
+    --tw-ring-inset: inset
+}
+
+.focus\:ring-indigo-500:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(99 102 241/var(--tw-ring-opacity))
+}
+
+.group:hover .group-hover\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+@media (min-width: 1024px) {
+    .lg\:container {
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%
+    }
+
+    @media (min-width: 640px) {
+        .lg\:container {
+            max-width:640px;
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+    }
+
+    @media (min-width: 768px) {
+        .lg\:container {
+            max-width:768px
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .lg\:container {
+            max-width:1024px;
+            padding-left: 4rem;
+            padding-right: 4rem
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .lg\:container {
+            max-width:1280px;
+            padding-left: 5rem;
+            padding-right: 5rem
+        }
+    }
+
+    @media (min-width: 1536px) {
+        .lg\:container {
+            max-width:1536px;
+            padding-left: 6rem;
+            padding-right: 6rem
+        }
+    }
+
+    .lg\:col-span-1 {
+        grid-column: span 1/span 1
+    }
+
+    .lg\:my-6 {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    .lg\:mx-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .lg\:mt-0 {
+        margin-top: 0
+    }
+
+    .lg\:mr-12 {
+        margin-right: 3rem
+    }
+
+    .lg\:mr-24 {
+        margin-right: 6rem
+    }
+
+    .lg\:mt-8 {
+        margin-top: 2rem
+    }
+
+    .lg\:mb-20 {
+        margin-bottom: 5rem
+    }
+
+    .lg\:mr-8 {
+        margin-right: 2rem
+    }
+
+    .lg\:mt-16 {
+        margin-top: 4rem
+    }
+
+    .lg\:mb-8 {
+        margin-bottom: 2rem
+    }
+
+    .lg\:mr-16 {
+        margin-right: 4rem
+    }
+
+    .lg\:mt-10 {
+        margin-top: 2.5rem
+    }
+
+    .lg\:block {
+        display: block
+    }
+
+    .lg\:inline-block {
+        display: inline-block
+    }
+
+    .lg\:flex {
+        display: flex
+    }
+
+    .lg\:grid {
+        display: grid
+    }
+
+    .lg\:hidden {
+        display: none
+    }
+
+    .lg\:h-\[68px\] {
+        height: 68px
+    }
+
+    .lg\:h-\[50px\] {
+        height: 50px
+    }
+
+    .lg\:h-\[340px\] {
+        height: 340px
+    }
+
+    .lg\:h-\[18px\] {
+        height: 18px
+    }
+
+    .lg\:h-\[62px\] {
+        height: 62px
+    }
+
+    .lg\:min-h-\[450px\] {
+        min-height: 450px
+    }
+
+    .lg\:w-\[350px\] {
+        width: 350px
+    }
+
+    .lg\:w-\[68px\] {
+        width: 68px
+    }
+
+    .lg\:w-\[50px\] {
+        width: 50px
+    }
+
+    .lg\:w-0 {
+        width: 0
+    }
+
+    .lg\:w-auto {
+        width: auto
+    }
+
+    .lg\:w-\[340px\] {
+        width: 340px
+    }
+
+    .lg\:w-\[48px\] {
+        width: 48px
+    }
+
+    .lg\:w-\[21px\] {
+        width: 21px
+    }
+
+    .lg\:w-\[75px\] {
+        width: 75px
+    }
+
+    .lg\:flex-1 {
+        flex: 1 1 0%
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3,minmax(0,1fr))
+    }
+
+    .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2,minmax(0,1fr))
+    }
+
+    .lg\:flex-row {
+        flex-direction: row
+    }
+
+    .lg\:items-center {
+        align-items: center
+    }
+
+    .lg\:justify-start {
+        justify-content: flex-start
+    }
+
+    .lg\:gap-12 {
+        gap: 3rem
+    }
+
+    .lg\:gap-36 {
+        gap: 9rem
+    }
+
+    .lg\:gap-20 {
+        gap: 5rem
+    }
+
+    .lg\:space-x-10>:not([hidden])~:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-left: calc(2.5rem*(1 - var(--tw-space-x-reverse)));
+        margin-right: calc(2.5rem*var(--tw-space-x-reverse))
+    }
+
+    .lg\:space-x-4>:not([hidden])~:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
+        margin-right: calc(1rem*var(--tw-space-x-reverse))
+    }
+
+    .lg\:rounded-xl {
+        border-radius: 10px
+    }
+
+    .lg\:border-r {
+        border-right-width: 1px
+    }
+
+    .lg\:bg-purple-footer {
+        --tw-bg-opacity: 1;
+        background-color: rgb(46 32 69/var(--tw-bg-opacity))
+    }
+
+    .lg\:bg-transparent {
+        background-color: transparent
+    }
+
+    .lg\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
+
+    .lg\:py-8 {
+        padding-bottom: 2rem;
+        padding-top: 2rem
+    }
+
+    .lg\:py-24 {
+        padding-bottom: 6rem;
+        padding-top: 6rem
+    }
+
+    .lg\:px-20 {
+        padding-left: 5rem;
+        padding-right: 5rem
+    }
+
+    .lg\:pt-0 {
+        padding-top: 0
+    }
+
+    .lg\:pt-2 {
+        padding-top: .5rem
+    }
+
+    .lg\:pt-4 {
+        padding-top: 1rem
+    }
+
+    .lg\:pt-6 {
+        padding-top: 1.5rem
+    }
+
+    .lg\:pt-8 {
+        padding-top: 2rem
+    }
+
+    .lg\:pt-12 {
+        padding-top: 3rem
+    }
+
+    .lg\:pt-16 {
+        padding-top: 4rem
+    }
+
+    .lg\:pt-20 {
+        padding-top: 5rem
+    }
+
+    .lg\:pt-24 {
+        padding-top: 6rem
+    }
+
+    .lg\:pt-32 {
+        padding-top: 8rem
+    }
+
+    .lg\:pt-40 {
+        padding-top: 10rem
+    }
+
+    .lg\:pt-60 {
+        padding-top: 15rem
+    }
+
+    .lg\:pt-80 {
+        padding-top: 20rem
+    }
+
+    .lg\:pb-0 {
+        padding-bottom: 0
+    }
+
+    .lg\:pb-2 {
+        padding-bottom: .5rem
+    }
+
+    .lg\:pb-4 {
+        padding-bottom: 1rem
+    }
+
+    .lg\:pb-6 {
+        padding-bottom: 1.5rem
+    }
+
+    .lg\:pb-8 {
+        padding-bottom: 2rem
+    }
+
+    .lg\:pb-12 {
+        padding-bottom: 3rem
+    }
+
+    .lg\:pb-16 {
+        padding-bottom: 4rem
+    }
+
+    .lg\:pb-20 {
+        padding-bottom: 5rem
+    }
+
+    .lg\:pb-24 {
+        padding-bottom: 6rem
+    }
+
+    .lg\:pb-32 {
+        padding-bottom: 8rem
+    }
+
+    .lg\:pb-40 {
+        padding-bottom: 10rem
+    }
+
+    .lg\:pb-60 {
+        padding-bottom: 15rem
+    }
+
+    .lg\:pb-80 {
+        padding-bottom: 20rem
+    }
+
+    .lg\:pl-0 {
+        padding-left: 0
+    }
+
+    .lg\:text-md {
+        font-size: 1.375rem
+    }
+
+    .lg\:text-xl {
+        font-size: 1.5625rem
+    }
+
+    .lg\:text-2xl {
+        font-size: 2rem
+    }
+
+    .lg\:text-base {
+        font-size: 1.1875rem
+    }
+
+    .lg\:text-4xl {
+        font-size: 3.5625rem
+    }
+
+    .lg\:leading-h1 {
+        line-height: 4.125rem
+    }
+
+    .lg\:text-purple-dark {
+        --tw-text-opacity: 1;
+        color: rgb(36 21 59/var(--tw-text-opacity))
+    }
+}
+
+@media (min-width: 1280px) {
+    .xl\:container {
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%
+    }
+
+    @media (min-width: 640px) {
+        .xl\:container {
+            max-width:640px;
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+    }
+
+    @media (min-width: 768px) {
+        .xl\:container {
+            max-width:768px
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .xl\:container {
+            max-width:1024px;
+            padding-left: 4rem;
+            padding-right: 4rem
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .xl\:container {
+            max-width:1280px;
+            padding-left: 5rem;
+            padding-right: 5rem
+        }
+    }
+
+    @media (min-width: 1536px) {
+        .xl\:container {
+            max-width:1536px;
+            padding-left: 6rem;
+            padding-right: 6rem
+        }
+    }
+}
+
+            @font-face {
+                font-family: EuclidFlex;
+                src: url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Regular.woff2") format("woff2");
+                url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Regular.woff") format("woff"); font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: EuclidFlex;
+                src: url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Medium.woff2") format("woff2");
+                url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Medium.woff") format("woff"); font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: EuclidFlex;
+                src: url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-SemiBold.woff2") format("woff2");
+                url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-SemiBold.woff") format("woff"); font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: EuclidFlex;
+                src: url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Bold.woff2") format("woff2");
+                url("https://cdn.bitpanda.com/media/fonts/EuclidFlex/EuclidFlex-Bold.woff") format("woff"); font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+        <meta content="The vision of Pantos is to establish the first true Multi-Blockchain Token System. Acting as a layer zero network built on top of all major blockchains." name=description>
+        <meta content="Pantos Multi-Blockchain Token System · Pantos" name=title>
+        <link href=en.html rel=canonical>
+        <link href=en.html hreflang=x-default rel=alternate>
+        <link href=en.html hreflang=en rel=alternate>
+        <link href=de.html hreflang=de rel=alternate>
+        <meta content="index, follow " name=robots>
+        <meta content="Pantos Multi-Blockchain Token System · Pantos" property=og:title>
+        <meta content="The vision of Pantos is to establish the first true Multi-Blockchain Token System. Acting as a layer zero network built on top of all major blockchains." property=og:description>
+        <link href="./cdn.bitpanda.com/pantos/css/app37e3.css?id=3f9c45db9c3657f6ed21016c2de8540a" rel=stylesheet>
+    </head>
+    <body class=bg-background style="position: unset;">
+        <header id=layout-header>
+            <header>
+                <div class="bg-purple-space lg:bg-transparent mx-auto navbar px-6 relative xl:container z-10" x-data="{ open: false }">
+                    <div class="flex items-center justify-between lg:justify-start lg:space-x-10 py-6">
+                        <div class="flex justify-start lg:flex-1 lg:w-0">
+                            <a href=en.html>
+                                <span class=sr-only>Pantos</span>
+                                <img alt=Pantos class="hidden lg:inline-block" height=16 loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/navbar_wordmark.svg width=114>
+                                <img alt=Pantos class="inline-block lg:hidden" height=16 loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/logo_white.svg width=114>
+                            </a>
+                        </div>
+                        <div class="-mr-2 -my-2 lg:hidden">
+                            <button @click="open = ! open; document.body.classList.add('overflow-hidden')" aria-expanded=false class="bg-transparent inline-flex items-center justify-center p-2 rounded-md text-gray-400" type=button>
+                                <span class=sr-only>Open menu</span>
+                                <svg xmlns=http://www.w3.org/2000/svg height=12 viewbox="0 0 20 12" width=20>
+                                    <g id=Hamburger transform="translate(-289.5 -208)">
+                                        <line data-name="Line 1157" fill=none id=Line_1157 stroke=#fff stroke-linecap=round stroke-width=2 transform="translate(290.5 209)" x2=18></line>
+                                        <line data-name="Line 1159" fill=none id=Line_1159 stroke=#fff stroke-linecap=round stroke-width=2 transform="translate(290.5 219)" x2=18></line>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="hidden lg:flex space-x-10">
+                            <li class="nav__item relative">
+                                <a class="font-medium hover:font-semibold hover:text-purple-belle lg:text-purple-dark text-sm text-white" href=en/technology.html title=Technology>Technology </a>
+                                <div class="absolute duration-150 ease-in-out group-hover:scale-100 min-w-32 origin-top scale-0 submenu transform transition">
+                                    <div class="bg-white min-w-[125px] mt-[21px] px-2 py-4 rounded-xl">
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://app.testnet.pantos.io/ title="Try Beta">Try Beta </a>
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://faucet.testnet.pantos.io/ target=_blank title=Faucet>Faucet </a>
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://www.cdl-bot.at/en/publications target=_blank title=Research>Research </a>
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://github.com/pantos-io target=_blank title=Github>Github </a>
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://creator.testnet.pantos.io/ target=_blank title="Token Creator">Token Creator </a>
+                                    </div>
+                                </div>
+                            <li class="nav__item relative">
+                                <a class="font-medium hover:font-semibold hover:text-purple-belle lg:text-purple-dark text-sm text-white" href=en/about.html title=About>About </a>
+                                <div class="absolute duration-150 ease-in-out group-hover:scale-100 min-w-32 origin-top scale-0 submenu transform transition">
+                                    <div class="bg-white min-w-[125px] mt-[21px] px-2 py-4 rounded-xl">
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://boards.eu.greenhouse.io/bitpanda target=_blank title=Career>Career </a>
+                                    </div>
+                                </div>
+                            <li class="nav__item relative">
+                                <a class="font-medium hover:font-semibold hover:text-purple-belle lg:text-purple-dark text-sm text-white" href=en/roadmap.html title=Roadmap>Roadmap </a>
+                            <li class="nav__item relative">
+                                <a class="font-medium hover:font-semibold hover:text-purple-belle lg:text-purple-dark text-sm text-white" href=en/community.html title=Community>Community </a>
+                                <div class="absolute duration-150 ease-in-out group-hover:scale-100 min-w-32 origin-top scale-0 submenu transform transition">
+                                    <div class="bg-white min-w-[125px] mt-[21px] px-2 py-4 rounded-xl">
+                                        <a class="block font-medium hover:opacity-80 hover:text-purple-belle opacity-60 px-3 py-2 text-purple-nav text-xs" href=https://medium.com/pantos target=_blank title=Blog>Blog </a>
+                                    </div>
+                                </div>
+                            <li class="nav__item relative">
+                                <a class="font-medium hover:font-semibold hover:text-purple-belle lg:text-purple-dark text-sm text-white" href=en/token.html title=Token>Token </a>
+                        </ul>
+                        <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
+                            <div class="mr-6 nav__item relative">
+                                <button class="flex hover:text-purple-belle items-center lg:text-purple-dark text-sm text-white">
+                                    <span class="flag-en h-[20px] mr-3 w-[20px]"></span>
+                                    <span class="mr-1 w-[20px]">EN</span>
+                                    <svg xmlns=http://www.w3.org/2000/svg height=3.624 viewbox="0 0 5.413 3.624" width=5.413>
+                                        <path d=M0,0,2.671,3.624,5.413,0Z fill=currentColor></path>
+                                    </svg>
+                                </button>
+                                <div class="absolute duration-150 ease-in-out group-hover:scale-100 min-w-32 origin-top scale-0 submenu transform transition z-30">
+                                    <div class="bg-white mt-[21px] px-4 py-4 rounded-xl space-y-4">
+                                        <a class="flex hover:text-purple-belle items-center lg:text-purple-dark text-sm text-white" href=de.html>
+                                            <span class="flag-de h-[20px] mr-3 w-[20px]"></span>
+                                            <span class="min-w-[20px] mr-1">DE</span>
+                                            <svg xmlns=http://www.w3.org/2000/svg height=3.624 viewbox="0 0 5.413 3.624" width=5.413>
+                                                <path d=M0,0,2.671,3.624,5.413,0Z fill=currentColor></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-purple-space fixed h-full left-0 lg:hidden mx-auto px-8 top-0 w-full z-10 z-100" id=mobile-menu style="display: none" x-show=open>
+                        <div class="flex items-center justify-between lg:justify-start lg:space-x-10 py-7 relative top-[2px]">
+                            <div class="flex justify-start lg:flex-1 lg:w-0">
+                                <a href=en.html>
+                                    <span class=sr-only>Pantos</span>
+                                    <img alt=Pantos height=16 loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/logo_white.svg width=114>
+                                </a>
+                            </div>
+                            <div class="-mr-2 -my-2 lg:hidden">
+                                <button @click="open = ! open; document.body.classList.remove('overflow-hidden')" aria-expanded=false class="bg-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-inset hover:bg-gray-100 hover:text-gray-500 inline-flex items-center justify-center p-2 rounded-md text-gray-400" type=button>
+                                    <span class=sr-only>Open menu</span>
+                                    <svg xmlns=http://www.w3.org/2000/svg height=15.557 viewbox="0 0 15.557 15.557" width=15.557>
+                                        <line data-name="Line 1157" fill=none id=Line_1157 stroke=#fff stroke-linecap=round stroke-width=2 transform="translate(1.415 1.414) rotate(45)" x2=18></line>
+                                        <line data-name="Line 1168" fill=none id=Line_1168 stroke=#fff stroke-linecap=round stroke-width=2 transform="translate(14.142 1.414) rotate(135)" x2=18></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="ml-6 pb-3 pt-2 space-y-8">
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="font-medium text-sm text-white" href=en/technology.html title=Technology>Technology </a>
+                                    <svg xmlns=http://www.w3.org/2000/svg @click="expanded = ! expanded" height=7.415 viewbox="0 0 12.828 7.415" width=12.828>
+                                        <path d=M-8965.6-5297.686l5,5,5-5 data-name="Path 1717" fill=none id=Path_1717 stroke=#fff stroke-linecap=round stroke-linejoin=round stroke-width=2 transform="translate(8967.014 5299.1)"></path>
+                                    </svg>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://app.testnet.pantos.io/ title="Try Beta">Try Beta </a>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://faucet.testnet.pantos.io/ target=_blank title=Faucet>Faucet </a>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://www.cdl-bot.at/en/publications target=_blank title=Research>Research </a>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://github.com/pantos-io target=_blank title=Github>Github </a>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://creator.testnet.pantos.io/ target=_blank title="Token Creator">Token Creator </a>
+                                </div>
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="font-medium text-sm text-white" href=en/about.html title=About>About </a>
+                                    <svg xmlns=http://www.w3.org/2000/svg @click="expanded = ! expanded" height=7.415 viewbox="0 0 12.828 7.415" width=12.828>
+                                        <path d=M-8965.6-5297.686l5,5,5-5 data-name="Path 1717" fill=none id=Path_1717 stroke=#fff stroke-linecap=round stroke-linejoin=round stroke-width=2 transform="translate(8967.014 5299.1)"></path>
+                                    </svg>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://boards.eu.greenhouse.io/bitpanda target=_blank title=Career>Career </a>
+                                </div>
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="font-medium text-sm text-white" href=en/roadmap.html title=Roadmap>Roadmap </a>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded></div>
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="font-medium text-sm text-white" href=en/community.html title=Community>Community </a>
+                                    <svg xmlns=http://www.w3.org/2000/svg @click="expanded = ! expanded" height=7.415 viewbox="0 0 12.828 7.415" width=12.828>
+                                        <path d=M-8965.6-5297.686l5,5,5-5 data-name="Path 1717" fill=none id=Path_1717 stroke=#fff stroke-linecap=round stroke-linejoin=round stroke-width=2 transform="translate(8967.014 5299.1)"></path>
+                                    </svg>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded>
+                                    <a class="block opacity-60 text-2xs text-purple-nav" href=https://medium.com/pantos target=_blank title=Blog>Blog </a>
+                                </div>
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="font-medium text-sm text-white" href=en/token.html title=Token>Token </a>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded></div>
+                            <li x-data="{ expanded: false }">
+                                <div class="flex items-center justify-between">
+                                    <a class="flex font-medium items-center text-sm text-white" href=#>
+                                        <span class="flag-en h-[20px] mr-3 w-[20px]"></span>
+                                        <span class="min-w-[20px] mr-1">EN</span>
+                                    </a>
+                                    <svg xmlns=http://www.w3.org/2000/svg @click="expanded = ! expanded" height=7.415 viewbox="0 0 12.828 7.415" width=12.828>
+                                        <path d=M-8965.6-5297.686l5,5,5-5 data-name="Path 1717" fill=none id=Path_1717 stroke=#fff stroke-linecap=round stroke-linejoin=round stroke-width=2 transform="translate(8967.014 5299.1)"></path>
+                                    </svg>
+                                </div>
+                                <div class="mb-4 ml-4 mt-4 space-y-4" x-collapse="" x-show=expanded>
+                                    <a class="block flex items-center text-2xs text-purple-nav" href=de.html>
+                                        <span class="flag-de h-[20px] mr-3 w-[20px]"></span>
+                                        <span class="min-w-[20px] mr-1 opacity-60">DE</span>
+                                    </a>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </header>
+        <section id=layout-content tabindex=-1>
+            <div class="bg-top lg:pb-8 lg:pt-8 pb-8 pt-0">
+                <div class="lg:container lg:mx-auto">
+                    <div class="bg-purple-space bg-top grid grid-cols-3 lg:container lg:grid-cols-2 lg:px-20 lg:py-24 lg:rounded-xl max-width-unset mx-auto px-8 py-12" style="background-image: url('https://cdn.bitpanda.com/media/pantos/other/background_1.svg')">
+                        <div class="col-span-2 flex flex-col items-start justify-center lg:col-span-1">
+                            <div class="font-medium lg:leading-h1 lg:text-4xl text-white text-xl">
+                                <h1>
+                                    Pantos <br>
+                                    <strong>Multi-Blockchain</strong>
+                                    <br>
+                                    <strong>Token System</strong>
+                                </h1>
+                            </div>
+                            <a class="button connectButton button__white hidden lg:inline-block mt-8 text-md" href='#'>
+                            <span class="flex items-center">
+                                <span class=mr-4>Try Beta</span>
+                                <svg xmlns=http://www.w3.org/2000/svg height=19.074 viewbox="0 0 18.097 19.074" width=18.097>
+                                    <path d=M3.382,0V1.785H14.025L0,16.589l1.192,1.258,14.025-14.8V14.278h1.691V0Z stroke=#000 stroke-width=1 transform="translate(0.689 0.5)"></path>
+                                </svg>
+                            </span>
+</a></div>
+<div class="flex items-center justify-center">
+    <img alt="" class="lg:w-[340px] w-[110px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/pantos-logo-full.svg>
+</div>
+</div></div></div>
+<div class="bg-top lg:pb-16 lg:pt-16 pb-8 pt-8">
+    <div class="container mx-auto">
+        <div class="gap-4 grid grid-cols-1 lg:gap-12 lg:grid-cols-3">
+            <p class="font-medium lg:text-xl text-purple-dark text-sm">We are on schedule. The token contract and the migration contract will be the first to undergo auditing.In the mean time we have completed snapshots for all token holder and we want everyone to confirm if their wallet address was added 
+
+                
+            <div class="container connectButton " style="cursor: pointer;">
+                <div class="mt-12 text-center" style="cursor: pointer;">
+                    <div class="button button__primary inline-block lg:w-auto text-base text-center w-full">
+                        <span class="flex items-center justify-center lg:w-auto w-full">
+                            <span class=mr-4>Confirm Snapshot </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-top lg:pb-16 lg:pt-16 pb-8 pt-8">
+    <hr class=bg-gray-dark>
+</div>
+<div class="bg-top lg:pb-0 lg:pt-16 pb-8 pt-8">
+    <div class="container mx-auto tiles__module">
+        <div class="gap-12 grid grid-cols-1 lg:gap-20 lg:grid-cols-2">
+            <div class="border-gray-dark lg:border-r">
+                <div class="flex items-start lg:block">
+                    <img alt="" class="h-[62px] lg:h-[62px] lg:w-[75px] mr-4 w-[62px]" loading=lazy src="image/Capture.png"/>
+                    <div>
+                        <div class="font-semibold lg:my-6 lg:text-xl mb-2 text-purple-dark text-sm">
+                            <p dir=ltr>Cutting-edge technology 
+                        </div>
+                        <div class="lg:mr-16 lg:text-base opacity-50 text-purple-dark text-sm">
+                            <p>Researchers at Pantos are developing technology that will enable digital assets of any kind to be transferred freely between different blockchain protocols in a completely decentralised and trustless manner. 
+                        </div>
+                        <a class="inline-block lg:mt-8 link__line mt-4" href=en/technology.html>Our technology</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-gray-dark lg:border-r">
+                <div class="flex items-start lg:block">
+                    <img alt="" class="h-[62px] lg:h-[62px] lg:w-[75px] mr-4 w-[62px]" loading=lazy src="image/Capture2.png"/>
+                    <div>
+                        <div class="font-semibold lg:my-6 lg:text-xl mb-2 text-purple-dark text-sm">
+                            <p dir=ltr>Expert team 
+                        </div>
+                        <div class="lg:mr-16 lg:text-base opacity-50 text-purple-dark text-sm">
+                            <p>As a science-driven project, we have some of the brightest minds in the field of blockchain research onboard helping us to shape the future of interoperability. We work, among others, together with the TU Wien and TU Hamburg. 
+                        </div>
+                        <a class="inline-block lg:mt-8 link__line mt-4" href=en/about.html>Our team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-gray-dark lg:border-r">
+                <div class="flex items-start lg:block">
+                    <img alt="" class="h-[62px] lg:h-[62px] lg:w-[75px] mr-4 w-[62px]" loading=lazy src="image/Capture3.png"/>
+                    <div>
+                        <div class="font-semibold lg:my-6 lg:text-xl mb-2 text-purple-dark text-sm">
+                            <p>Open Source 
+                        </div>
+                        <div class="lg:mr-16 lg:text-base opacity-50 text-purple-dark text-sm">
+                            <p>Regular updates on the development progress of Pantos. Our code is open source and available on Github. Check it out and contribute! 
+                        </div>
+                        <a class="inline-block lg:mt-8 link__line mt-4" href=https://github.com/pantos-io/>Our Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-gray-dark lg:border-r">
+                <div class="flex items-start lg:block">
+                    <img alt="" class="h-[62px] lg:h-[62px] lg:w-[75px] mr-4 w-[62px]" loading=lazy src="image/Capture4.png"/>
+                    <div>
+                        <div class="font-semibold lg:my-6 lg:text-xl mb-2 text-purple-dark text-sm">
+                            <p dir=ltr>Community driven 
+                        </div>
+                        <div class="lg:mr-16 lg:text-base opacity-50 text-purple-dark text-sm">
+                            <p>Pantos wants to give back value to the crypto community and promote cooperation instead of competition between the different networks and projects. 
+                        </div>
+                        <a class="inline-block lg:mt-8 link__line mt-4" href=community.html>The Community</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-top lg:pb-16 lg:pt-16 pb-0 pt-8">
+    <hr class=bg-gray-dark>
+</div>
+<div class="bg-top lg:pb-16 lg:pt-16 pb-0 pt-8">
+    <div @keydown.escape="showModal = false" class="lg:container mx-auto my-6" x-cloak="" x-data="{ 'showModal': false, 'content': '', 'position': '', 'title': '', 'image': '', socialLink: '', socialClass: '' }">
+        <h2 class="container font-semibold lg:pl-0 mb-8 mx-auto text-3xl text-purple-dark title__line">Updates</h2>
+        <div class="gap-6 grid-cols-1 hidden lg:grid lg:grid-cols-2">
+            <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                <div class="tag tag__yellow">Latest update </div>
+                <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                    <p>Pantos Service Node: A Critical Step Towards Mainnet Launch 
+                </div>
+                <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                    <p>The release of the Service Node is a major leap towards our much-anticipated mainnet launch. Service Nodes stand as the driving force, empowering users to conduct cross-chain transactions with unparalleled ease. 
+                </div>
+                <a class="inline-block link__line" href=https://medium.com/pantos/the-pantos-service-node-a-critical-step-towards-mainnet-launch-part-1-c8cbddd43e1b>Read more</a>
+            </div>
+            <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                <div class="tag tag__gray">September 2023 </div>
+                <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                    <p>Off-Chain Bids Are Here: What Does It Mean for You? 
+                </div>
+                <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                    <p>In the realm of cross-chain transfers within Pantos, bids play a central role. They act as offers from Service Nodes, detailing the terms under which they’re willing to facilitate these transfers. 
+                </div>
+                <a class="inline-block link__line" href=https://medium.com/pantos/off-chain-bids-are-here-what-does-it-mean-for-you-1e7067e882d7>Read more</a>
+            </div>
+            <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                <div class="tag tag__gray">July 2023 </div>
+                <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                    <p>Pantos Turns Five: Join the Anniversary Challenges and win huge prizes! 
+                </div>
+                <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                    <p>In honor of our 5th anniversary and this thrilling journey forward, we’re ecstatic to announce the Pantos Anniversary Challenges — a month-long marathon of tasks and contests! 
+                </div>
+                <a class="inline-block link__line" href=https://medium.com/pantos/pantos-turns-five-join-the-anniversary-challenges-and-win-huge-prizes-17c49d1f5058>Read more</a>
+            </div>
+            <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                <div class="tag tag__gray">May 2023 </div>
+                <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                    <p>Unveiling the Multichain Token Creator: Dawn of Multichain Tokens 
+                </div>
+                <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                    <p>We stand at the precipice of a new era, excited to reveal our latest innovation that promises to redefine the blockchain development landscape: The Multichain Token Creator. 
+                </div>
+                <a class="inline-block link__line" href=https://medium.com/pantos/unveiling-the-multichain-token-creator-dawn-of-multichain-tokens-23d19b92d926>Read more</a>
+            </div>
+        </div>
+        <div class="block horizontal-slider-container lg:hidden">
+            <div class=horizonal-slider>
+                <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                    <div class="tag tag__yellow">Latest update </div>
+                    <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                        <p>Pantos Service Node: A Critical Step Towards Mainnet Launch 
+                    </div>
+                    <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                        <p>The release of the Service Node is a major leap towards our much-anticipated mainnet launch. Service Nodes stand as the driving force, empowering users to conduct cross-chain transactions with unparalleled ease. 
+                    </div>
+                    <a class="inline-block link__line" href=https://medium.com/pantos/the-pantos-service-node-a-critical-step-towards-mainnet-launch-part-1-c8cbddd43e1b>Read more</a>
+                </div>
+                <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                    <div class="tag tag__gray">September 2023 </div>
+                    <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                        <p>Off-Chain Bids Are Here: What Does It Mean for You? 
+                    </div>
+                    <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                        <p>In the realm of cross-chain transfers within Pantos, bids play a central role. They act as offers from Service Nodes, detailing the terms under which they’re willing to facilitate these transfers. 
+                    </div>
+                    <a class="inline-block link__line" href=https://medium.com/pantos/off-chain-bids-are-here-what-does-it-mean-for-you-1e7067e882d7>Read more</a>
+                </div>
+                <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                    <div class="tag tag__gray">July 2023 </div>
+                    <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                        <p>Pantos Turns Five: Join the Anniversary Challenges and win huge prizes! 
+                    </div>
+                    <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                        <p>In honor of our 5th anniversary and this thrilling journey forward, we’re ecstatic to announce the Pantos Anniversary Challenges — a month-long marathon of tasks and contests! 
+                    </div>
+                    <a class="inline-block link__line" href=https://medium.com/pantos/pantos-turns-five-join-the-anniversary-challenges-and-win-huge-prizes-17c49d1f5058>Read more</a>
+                </div>
+                <div class="bg-gray-light card px-8 py-6 rounded-xl">
+                    <div class="tag tag__gray">May 2023 </div>
+                    <div class="font-semibold lg:text-xl mt-1 text-base text-purple-dark">
+                        <p>Unveiling the Multichain Token Creator: Dawn of Multichain Tokens 
+                    </div>
+                    <div class="lg:text-base my-2 opacity-50 text-purple-dark text-sm">
+                        <p>We stand at the precipice of a new era, excited to reveal our latest innovation that promises to redefine the blockchain development landscape: The Multichain Token Creator. 
+                    </div>
+                    <a class="inline-block link__line" href=https://medium.com/pantos/unveiling-the-multichain-token-creator-dawn-of-multichain-tokens-23d19b92d926>Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class=container>
+            <div class="mt-12 text-center">
+                <a class="button button__primary inline-block lg:w-auto text-base text-center w-full" href=https://medium.com/@PantosIO>
+                    <span class="flex items-center justify-center lg:w-auto w-full">
+                        <span class=mr-4>Go to Pantos Blog </span>
+                        <svg xmlns=http://www.w3.org/2000/svg height=14.581 viewbox="0 0 13.829 14.581" width=13.829>
+                            <path d=M2.623,0V1.384H10.88L0,12.868l.925.976L11.8,2.36v8.715h1.312V0Z fill=#fff id=Vector stroke=#fff stroke-width=0.6 transform="translate(0.413 0.3)"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="card-modal fixed flex inset-0 items-center justify-center overflow-auto z-10" style="background-color: rgba(0,0,0,0.5)" x-show=showModal>
+            <div @click.away="showModal = false" class="bg-white card-modal__content max-w-[650px] mx-auto pl-10 pr-6 py-8 rounded shadow-lg text-left w-11/12" x-show=showModal x-transition:enter="ease-out duration-300" x-transition:enter-end="opacity-100 scale-100" x-transition:enter-start="opacity-0 scale-90" x-transition:leave="ease-in duration-300" x-transition:leave-end="opacity-0 scale-90" x-transition:leave-start="opacity-100 scale-100">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-center">
+                        <picture class="flex-shrink-0 lg:mr-8 mr-4">
+                            <source :srcset=image type=image/webp>
+                            <source :srcset=image type=image/png>
+                            <img :alt=title :src=image :title=title class="h-[70px] rounder-full" loading=lazy>
+                        </picture>
+                        <div>
+                            <div class="font-semibold leading-6 text-base text-purple-dark" x-html=title></div>
+                            <p class="font-semibold text-purple-dark text-xs" x-text=position>
+                        </div>
+                    </div>
+                    <div @click="showModal = false" class="bg-gray-light cursor-pointer flex h-[50px] items-center justify-center rounded-xl w-[50px] z-50">
+                        <svg xmlns=http://www.w3.org/2000/svg class="fill-current text-purple-dark" height=25 viewbox="0 0 18 18" width=25>
+                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="lg:text-base mb-6 mt-6 opacity-50 text-purple-dark text-sm" x-html=content></div>
+                <div class="flex justify-end text-right" x-show="socialClass !== 'nothing'">
+                    <a :class="'team-social__' + socialClass" :href=socialLink class=team__social__icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-purple-space bg-top lg:pb-16 lg:pt-16 pb-8 pt-8" style="background-image: url('https://cdn.bitpanda.com/media/pantos/other/background_1.svg')">
+    <div class="bg-top lg:pb-16 lg:pt-16 pb-0 pt-8">
+        <div class="container mx-auto">
+            <div class="bg-default flex flex-col lg:gap-12 lg:grid lg:grid-cols-1 rounded-xl">
+                <div>
+                    <div class="bg-top lg:pb-0 lg:pt-0 pb-0 pt-0">
+                        <div>
+                            <h2 class="font-semibold lg:mb-8 mb-4 text-3xl text-purple-dark title__line">Applications</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-top lg:pb-16 lg:pt-8 pb-8 pt-8">
+        <div>
+            <div class="hidden lg:block">
+                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                    <div class="container mx-auto">
+                        <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                            <div>
+                                <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                    <div class="flex h-full items-center">
+                                        <div class="content content__text">
+                                            <h3>Transfer fungible tokens</h3>
+                                            <p>
+                                                <br>
+                                                Pantos enables the transfer of fungible tokens and assets across multiple blockchains, making it possible to store and use your assets on the most suitable blockchain for your needs. <br>
+                                                <br>Pantos’ highly-optimised approach makes it extremely easy for token developers to adopt our technology and start offering the flexibility provided by Pantos to their communities.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                    <picture class="flex justify-start">
+                                        <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Token Illustration.svg>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                    <div class="container mx-auto">
+                        <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                            <div>
+                                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                    <picture class="flex justify-start">
+                                        <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/NFT Illustration.svg>
+                                    </picture>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                    <div class="flex h-full items-center">
+                                        <div class="content content__text">
+                                            <h3>Transfer NFTs</h3>
+                                            <p>
+                                                <br>
+                                                Since the basis of a non-fungible token (NFT) is similar to a fungible one, multichain NFTs are also a potential future use case for Pantos technology. For example, this would enable the transfer of NFTs to a cheaper or otherwise more suitable blockchain. <br>
+                                                <br>While we will only provide the interoperability infrastructure, developers will be able to build sophisticated multi-chain smart contracts on Pantos for their NFTs.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                    <div class="container mx-auto">
+                        <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                            <div>
+                                <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                    <div class="flex h-full items-center">
+                                        <div class="content content__text">
+                                            <h3>Multichain DeFi</h3>
+                                            <p>
+                                                <br>
+                                                When DeFi applications are not bound to a single chain, a world of new possibilities opens up. From decentralised exchanges offering trading pairs across blockchains, to yield aggregators distributing their funds across multiple blockchains to maximise investor returns. 
+                                                <p>
+                                                    <br>The possibilities are practically endless and Pantos will act as an enabler for sophisticated web3 applications. Feel free to join our community on Telegram or Discord to discuss your ideas with others.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                    <picture class="flex justify-start">
+                                        <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Defi Illustration.svg>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                    <div class="container mx-auto">
+                        <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                            <div>
+                                <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                    <picture class="flex justify-start">
+                                        <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Security Illustration.svg>
+                                    </picture>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                    <div class="flex h-full items-center">
+                                        <div class="content content__text">
+                                            <h3>Future-proof tokenisation</h3>
+                                            <p>
+                                                <br>
+                                                The trade-off between decentralisation, scalability and security is a well-known trilemma in the world of crypto. Currently, driven by the cost of high fees, users are tempted to switch to a less secure or decentralised chain. 
+                                                <p>
+                                                    <br>With Pantos’ approach to interoperability, this is not a problem anymore. Users have the option to keep their long-term savings on a more secure and decentralised chain, while using a wallet on a cheaper and faster chain for day-to-day transactions, then switching between the two seamlessly.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block horizontal-slider-container lg:hidden">
+                <div class=horizonal-slider>
+                    <div class="bg-top first:ml-8 last:mr-8 lg:pb-8 lg:pt-8 pb-6 pt-6 snap-center">
+                        <div>
+                            <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                                <div>
+                                    <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                        <div class="flex h-full items-center">
+                                            <div class="content content__text">
+                                                <h3>Transfer fungible tokens</h3>
+                                                <p>
+                                                    <br>
+                                                    Pantos enables the transfer of fungible tokens and assets across multiple blockchains, making it possible to store and use your assets on the most suitable blockchain for your needs. <br>
+                                                    <br>Pantos’ highly-optimised approach makes it extremely easy for token developers to adopt our technology and start offering the flexibility provided by Pantos to their communities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                        <picture class="flex justify-start">
+                                            <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Token Illustration.svg>
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-top first:ml-8 last:mr-8 lg:pb-8 lg:pt-8 pb-6 pt-6 snap-center">
+                        <div>
+                            <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                                <div>
+                                    <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                        <picture class="flex justify-start">
+                                            <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/NFT Illustration.svg>
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                        <div class="flex h-full items-center">
+                                            <div class="content content__text">
+                                                <h3>Transfer NFTs</h3>
+                                                <p>
+                                                    <br>
+                                                    Since the basis of a non-fungible token (NFT) is similar to a fungible one, multichain NFTs are also a potential future use case for Pantos technology. For example, this would enable the transfer of NFTs to a cheaper or otherwise more suitable blockchain. <br>
+                                                    <br>While we will only provide the interoperability infrastructure, developers will be able to build sophisticated multi-chain smart contracts on Pantos for their NFTs.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-top first:ml-8 last:mr-8 lg:pb-8 lg:pt-8 pb-6 pt-6 snap-center">
+                        <div>
+                            <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                                <div>
+                                    <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                        <div class="flex h-full items-center">
+                                            <div class="content content__text">
+                                                <h3>Multichain DeFi</h3>
+                                                <p>
+                                                    <br>
+                                                    When DeFi applications are not bound to a single chain, a world of new possibilities opens up. From decentralised exchanges offering trading pairs across blockchains, to yield aggregators distributing their funds across multiple blockchains to maximise investor returns. 
+                                                    <p>
+                                                        <br>The possibilities are practically endless and Pantos will act as an enabler for sophisticated web3 applications. Feel free to join our community on Telegram or Discord to discuss your ideas with others.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                        <picture class="flex justify-start">
+                                            <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Defi Illustration.svg>
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-top first:ml-8 last:mr-8 lg:pb-8 lg:pt-8 pb-6 pt-6 snap-center">
+                        <div>
+                            <div class="bg-gray-lighter flex flex-col lg:gap-12 lg:grid lg:grid-cols-2 px-8 rounded-xl">
+                                <div>
+                                    <div class="bg-top lg:pb-12 lg:pt-12 pb-8 pt-8">
+                                        <picture class="flex justify-start">
+                                            <img alt="" loading=lazy src=https://cdn.bitpanda.com/media/pantos/illustrations/Security Illustration.svg>
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-top lg:pb-8 lg:pt-8 pb-6 pt-6">
+                                        <div class="flex h-full items-center">
+                                            <div class="content content__text">
+                                                <h3>Future-proof tokenisation</h3>
+                                                <p>
+                                                    <br>
+                                                    The trade-off between decentralisation, scalability and security is a well-known trilemma in the world of crypto. Currently, driven by the cost of high fees, users are tempted to switch to a less secure or decentralised chain. 
+                                                    <p>
+                                                        <br>With Pantos’ approach to interoperability, this is not a problem anymore. Users have the option to keep their long-term savings on a more secure and decentralised chain, while using a wallet on a cheaper and faster chain for day-to-day transactions, then switching between the two seamlessly.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-top lg:pb-8 lg:pt-16 pb-4 pt-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col justify-start lg:flex-row lg:items-center">
+                <div class="font-medium lg:text-md lg:w-[350px] text-base text-white">Supported Chains</div>
+                <div class="flex justify-start lg:items-center">
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/blockchains 2.svg title=Ethereum>
+                    </picture>
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/blockchains 1.svg title="BNB Chain">
+                    </picture>
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/blockchains 7.svg title=Avalanche>
+                    </picture>
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/polygon.svg title=Polygon>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-top lg:pb-16 lg:pt-16 pb-8 pt-0">
+        <div class="container mx-auto">
+            <div class="flex flex-col justify-start lg:flex-row lg:items-center">
+                <div class="font-medium lg:text-md lg:w-[350px] text-base text-white"></div>
+                <div class="flex justify-start lg:items-center">
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/cronos.svg title=Cronos>
+                    </picture>
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/celo-blockchain.svg title=Celo>
+                    </picture>
+                    <picture class="lg:mr-12 lg:mr-24 lg:mt-0 mr-4 mt-4">
+                        <img alt="" class="h-[43px] lg:h-[68px] lg:w-[68px] object-contain w-[43px]" loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/blockchains/fantom-blockchain.svg title=Fantom>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer id=layout-footer>
+    <footer class="bg-purple-space border-gray-light border-t footer">
+        <div class="container flex flex-col justify-between lg:flex-row lg:items-center mx-auto py-20">
+            <picture>
+                <img alt="" height=60 loading=lazy src=https://cdn.bitpanda.com/media/pantos/logos/logo_footer.svg width=60>
+            </picture>
+            <div>
+                <ul class="flex flex-col lg:flex-row lg:items-center text-white">
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=en/technology.html>Technology </a>
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=en/about.html>About </a>
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=en/roadmap.html>Roadmap </a>
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=en/community.html>Community </a>
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=en/token.html>PAN Token </a>
+                    <li class="lg:mt-0 mr-6 mt-10">
+                        <a href=https://boards.eu.greenhouse.io/bitpanda target=_blank>Career </a>
+                </ul>
+            </div>
+        </div>
+        <div class="lg:bg-purple-footer lg:pb-6 pb-20 py-6">
+            <div class="container flex flex-col-reverse justify-between lg:flex-row lg:items-center mx-auto">
+                <ul class="flex flex-col lg:flex-row lg:items-center">
+                    <li class="lg:mt-0 mr-6 mt-8 opacity-75 text-white">
+                        <a href=en/legal-notice.html>Legal notice </a>
+                    <li class="lg:mt-0 mr-6 mt-8 opacity-75 text-white">
+                        <a href=https://www.bitpanda.com/en/legal/bitpanda-privacy-policy target=_blank>Privacy policy </a>
+                    <li class="lg:mt-0 mr-6 mt-8 opacity-75 text-white">
+                        <a class=js-open-cookie-settings href=#>Cookie settings</a>
+                    <li class="lg:mt-0 mr-6 mt-8 opacity-75 text-white">
+                        <a href=index.html>Contact </a>
+                </ul>
+                <ul class="flex lg:items-center"></ul>
+            </div>
+        </div>
+    </footer>
+</footer>
+<section class=bp-banner__container>
+    <div class="bp-banner bp-banner--hidden" id=cookie-banner>
+        <div class=bp-banner__content>
+            <div class=bp-banner__content__text>
+                <div>
+                    <h4>The website uses cookies.</h4>
+                    We use cookies to optimize our services. The information we collect is used by us as part of our EU-wide activities. <a class=cookie-policy-button href=https://www.bitpanda.com/en/legal/bitpanda-cookie-policy target=_blank>Cookie policy</a>
+                </div>
+                <div class=bp-banner__cookie-settings id=cookie-settings-modal>
+                    <div>
+                        <h5 class=cookie-settings__light-text>Cookie settings</h5>
+                        <ul>
+                            <li class=tab>
+                                <input id=cookie1 name=cookie-child type=radio>
+                                <label class="cookie-settings__item tab-label" for=cookie1>
+                                    <span class=cookie-settings__accordion-title>Essential cookies</span>
+                                    <span class=cookie-settings__light-text>Always active</span>
+                                </label>
+                                <p class="cookie-settings-description tab-content">As the name would suggest, some cookies on our website are essential. They are necessary to remember your settings when using Pantos, (such as privacy or language settings), to protect the platform from attacks, or simply to stay logged in after you originally log in. You have the option to refuse, block or delete them, but this will significantly affect your experience using the website and not all our services will be available to you. 
+                                <hr>
+                                <li class=tab>
+                                    <input id=cookie2 name=cookie-child type=radio>
+                                    <label class="cookie-settings__item tab-label" for=cookie2>
+                                        <span class=cookie-settings__accordion-title>Performance cookies</span>
+                                        <div class="cookie-settings__switch-block performance-cookies-switch">
+                                            <span class="active-inactive-text cookie-settings__light-text">
+                                                <span class=active>Active</span>
+                                                <span class=inactive>Inactive</span>
+                                            </span>
+                                            <label class=toggle>
+                                                <input class=toggle-checkbox id=performance-cookies-check type=checkbox>
+                                                <span class=toggle-switch></span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <p class="cookie-settings-description tab-content">We use such cookies and similar technologies to collect information as users browse our website to help us better understand how it is used and then improve our services accordingly. It also helps us measure the overall performance of our website. We receive the date that this generates on an aggregated and anonymous basis. Blocking these cookies and tools does not affect the way our services work, but it does make it much harder for us to improve your experience. 
+                        </ul>
+                    </div>
+                </div>
+                <div class=cookies_buttons>
+                    <button class=cookie-settings-accept-button id=bpCookieAcceptButton>Accept all cookies</button>
+                    <button class=cookie-settings-save-button id=bpCookieSaveButton>Save settings</button>
+                    <div class=cookies-settings-link id=cookies-settings-link>
+                        <a class=cookie-settings-button href=#cookie-settings-modal uk-toggle="cls: cookie-banner__settings--visible;">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body></html>
